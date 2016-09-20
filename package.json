@@ -1,0 +1,29 @@
+{
+  "name": "sly-js",
+  "version": "0.0.1",
+  "description": "A  very simple library to work with inline styles in ReactJs",
+  "main": "lib/main.js",
+  "scripts": {
+    "test": "mocha ./lib/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/horinlabs/sly-js.git"
+  },
+  "keywords": [
+    "styles",
+    "react",
+    "inline"
+  ],
+  "author": "Danilo Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/horinlabs/sly-js/issues"
+  },
+  "homepage": "https://github.com/horinlabs/sly-js#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jsdoc": "^3.4.1",
+    "mocha": "^3.0.2"
+  }
+}
