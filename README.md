@@ -87,4 +87,16 @@ React.createClass({
 })
 ```
 
-Awesome!
+Awesome! But what if I need to add an external object style? It's very possible too!
+```
+var s = require('./component.style');
+var React = require('react');
+
+React.createClass({
+	render: function(){
+		return <div style={s('root', this.props.style)}>
+			<button style={s('button.root', 'button.whiteText', 'red')}>The Button</button>
+		</div>;
+	};
+})
+```
