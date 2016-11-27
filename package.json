@@ -4,7 +4,8 @@
   "description": "A  very simple library to work with inline styles in ReactJs",
   "main": "lib/main.js",
   "scripts": {
-    "test": "mocha ./lib/*.spec.js"
+    "test": "mocha ./lib/*.spec.js",
+    "lint": "./node_modules/.bin/eslint ./lib/*.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,10 @@
   "homepage": "https://github.com/horinlabs/sly-js#readme",
   "devDependencies": {
     "chai": "^3.5.0",
-    "jsdoc": "^3.4.1",
+    "eslint": "^3.10.0",
     "mocha": "^3.0.2"
+  },
+  "dependencies": {
+    "get-value": "^2.0.6"
   }
 }
