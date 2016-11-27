@@ -1,6 +1,6 @@
 {
   "name": "sly-js",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "description": "A  very simple library to work with inline styles in ReactJs",
   "main": "lib/main.js",
   "scripts": {
