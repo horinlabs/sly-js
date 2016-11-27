@@ -80,23 +80,36 @@ var React = require('react');
 
 React.createClass({
 	render: function(){
-		return <div>
+		return <div style={s('root')}>
 			<button style={s('button.root', 'button.whiteText', 'red')}>The Button</button>
 		</div>;
 	};
 })
 ```
 
-Awesome! But what if I need to add an external object style? It's very possible too!
+##Conditional styles
+
+Let's say you want styles to be added only if some condition is true. SlyJS allow you to do it like that:
 ```
 var s = require('./component.style');
 var React = require('react');
 
 React.createClass({
+	getInitialState: function(){
+		return { hovered: false };
+	},
 	render: function(){
-		return <div style={s('root', this.props.style)}>
-			<button style={s('button.root', 'button.whiteText', 'red')}>The Button</button>
+		return <div style={s('root')}>
+			<button
+				style={s('button.root', {'button.whiteText': this.state.hovered})}
+				onMouseOver={() => this.setState({ hovered: true })}
+				onMouseOut={() => this.setState({ hovered: false })}>
+				The Button
+			</button>
 		</div>;
 	};
 })
 ```
+In the example above, the style called `button.whiteText` will be only rendered when the button is hovered.
+
+Awesome, right?
