@@ -1,4 +1,4 @@
-# SlyJS
+# SlyJS [![NPM version](https://img.shields.io/npm/v/sly-js.svg?style=flat)](https://www.npmjs.com/package/sly-js) [![NPM downloads](https://img.shields.io/npm/dm/sly-js.svg?style=flat)](https://npmjs.org/package/sly-js) [![Build Status](https://img.shields.io/travis/horinlabs/sly-js.svg?style=flat)](https://travis-ci.org/horinlabs/sly-js)
 
 A  very simple library to work with inline styles in ReactJS.
 
